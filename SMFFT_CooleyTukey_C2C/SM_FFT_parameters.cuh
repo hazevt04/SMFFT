@@ -626,7 +626,7 @@ class FFT_65536_inverse_noreorder : public FFT_Params {
 class FFT_131072_forward : public FFT_Params {
 	public:
 	static const int fft_exp = 17;
-	static const int fft_sm_required = 135168//;67584;//33792;
+	static const int fft_sm_required = 135168;//;67584;//33792;
 	static const int fft_length = 131072;
 	static const int fft_length_quarter = 32768;//16384;//8192;//4096;//2048;//1024;
 	static const int fft_length_half = 65536;//32768;//16384;//8192; //4096; //2048;
@@ -638,7 +638,7 @@ class FFT_131072_forward : public FFT_Params {
 class FFT_131072_forward_noreorder : public FFT_Params {
 	public:
 	static const int fft_exp = 17;
-	static const int fft_sm_required = 135168//;67584;//33792;
+	static const int fft_sm_required = 135168;//;67584;//33792;
 	static const int fft_length = 131072;
 	static const int fft_length_quarter = 32768;//16384;//8192;//4096;//2048;//1024;
 	static const int fft_length_half = 65536;//32768;//16384;//8192; //4096; //2048;
@@ -650,7 +650,7 @@ class FFT_131072_forward_noreorder : public FFT_Params {
 class FFT_131072_inverse : public FFT_Params {
 	public:
 	static const int fft_exp = 17;
-	static const int fft_sm_required = 135168//;67584;//33792;
+	static const int fft_sm_required = 135168;//;67584;//33792;
 	static const int fft_length = 131072;
 	static const int fft_length_quarter = 32768;//16384;//8192;//4096;//2048;//1024;
 	static const int fft_length_half = 65536;//32768;//16384;//8192; //4096; //2048;
@@ -662,7 +662,7 @@ class FFT_131072_inverse : public FFT_Params {
 class FFT_131072_inverse_noreorder : public FFT_Params {
 	public:
 	static const int fft_exp = 17;
-	static const int fft_sm_required = 135168//;67584;//33792;
+	static const int fft_sm_required = 135168;//;67584;//33792;
 	static const int fft_length = 131072;
 	static const int fft_length_quarter = 32768;//16384;//8192;//4096;//2048;//1024;
 	static const int fft_length_half = 65536;//32768;//16384;//8192; //4096; //2048;
