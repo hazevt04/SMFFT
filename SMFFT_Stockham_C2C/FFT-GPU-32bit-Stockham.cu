@@ -20,6 +20,16 @@ public:
 	static const int warp = 32;
 };
 
+// gdh
+class FFT_64 : public FFT_ConstParams {
+	public:
+	static const int fft_exp = 6;
+	static const int fft_quarter = 16;
+	static const int fft_half = 32;
+	static const int fft_threequarters = 48;
+	static const int fft_length = 64;
+};
+
 class FFT_256 : public FFT_ConstParams {
 	public:
 	static const int fft_exp = 8;

@@ -11,7 +11,7 @@ NVCC = ${CUDA_HOME}/bin/nvcc
 # Basic flags for compilers, one for debug options
 # fmad flags used for reason of floating point operation
 ###############################################################
-NVCCFLAGS = -O2 -arch=sm_70 --ptxas-options=-v --use_fast_math -Xcompiler -Wextra -lineinfo
+NVCCFLAGS = -O2 -arch=sm_72 --ptxas-options=-v --use_fast_math -Xcompiler -Wextra -lineinfo
 
 GCC_OPTS =-O3 -Wall -Wextra $(INC)
 

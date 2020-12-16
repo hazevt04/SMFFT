@@ -329,8 +329,6 @@ __device__ __inline__ void reorder_4096(float2 *s_input, float2 *A_DFT_value, fl
 }
 
 
-
-
 template<class const_params>
 __device__ void do_SMFFT_CT_DIT(float2 *s_input){
 	float2 A_DFT_value, B_DFT_value, C_DFT_value, D_DFT_value;
@@ -852,7 +850,7 @@ int GPU_smFFT_4elements(float2 *h_input, float2 *h_output, int FFT_size, int nFF
 	//--------------------------------------------------
 	//-------------------------> 4way
 	if(MULTIPLE){
-		if (DEBUG) printf("  Running shared memory FFT (Cooley-Tukey) 100 times per GPU kernel (eliminates device memory)... ");
+		if (DEBUG) printf("  Running shared memory FFT (Cooley-Tukey) %d times per GPU kernel (eliminates device memory)... ", nRuns);
 		FFT_init();
 		double total_time_FFT_multiple = 0;
 		for(int f=0; f<nRuns; f++){

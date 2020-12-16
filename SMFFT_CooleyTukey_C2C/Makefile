@@ -4,7 +4,8 @@ LIB := -L${CUDA_HOME}/lib64 -lcudart -lcufft -lcuda
 GCC = g++
 NVCC = ${CUDA_HOME}/bin/nvcc
 
-NVCCFLAGS = -O3 -arch=sm_70 --ptxas-options=-v --use_fast_math -Xcompiler -Wextra -lineinfo
+#NVCCFLAGS = -O3 -arch=sm_72 --ptxas-options=-v --use_fast_math -Xcompiler -Wextra -lineinfo
+NVCCFLAGS = -O3 -arch=sm_72 --ptxas-options=-v --use_fast_math -Xcompiler -Wextra --device-debug
 
 GCC_OPTS =-O3 -Wall -Wextra $(INC)
 
